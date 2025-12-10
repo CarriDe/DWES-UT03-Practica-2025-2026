@@ -5,4 +5,4 @@ from .models import Task
 # Create your views here.
 class detalle_tarea(DetailView):
     model = Task
-    template_name = 'tarea.html'
+    template_name = 'detalle_tarea.html'
