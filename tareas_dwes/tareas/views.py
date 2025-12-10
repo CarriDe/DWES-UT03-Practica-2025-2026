@@ -1,8 +1,9 @@
 from django.shortcuts import render
 from django.views.generic.detail import DetailView
-from .models import Task
+from .models import Tarea
 
 # Create your views here.
-class detalle_tarea(DetailView):
-    model = Task
-    template_name = 'detalle_tarea.html'
+class TareaView(DetailView):
+    model = Tarea
+    template_name = "tareas/detalle_tarea.html"
+    context_object_name = "Tareas"
