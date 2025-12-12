@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from django.views.generic.detail import DetailView
 from .models import Tarea
 
@@ -6,4 +5,4 @@ from .models import Tarea
 class TareaView(DetailView):
     model = Tarea
     template_name = "tareas/detalle_tarea.html"
-    context_object_name = "Tareas"
+    context_object_name = "tarea"
